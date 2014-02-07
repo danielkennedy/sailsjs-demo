@@ -17,7 +17,9 @@ new <appname>` to create a new scaffolded application.
 Secret Sauce
 ------------
 In order to get your new application to operate on your local system, you'd 
-normally use `sails lift`. On Cloud Foundry, npm should install `sails` during deployment, but you will still want to specify a start command for your application.
+normally use `sails lift`, but the standard `node app.js` works just as well. 
+On Cloud Foundry, npm should install `sails` during deployment. If you have any
+issues, though, you can always `npm shrinkwrap` your application.
 
 Further, we need to prepare the application to listen on the port that is
 assigned by Cloud Foundry. To do that, create and edit `config/local.js` as follows:
