@@ -1,7 +1,7 @@
 sailsjs-demo
 ============
 
-This simple, default [Sails](http://sailsjs.org/) app demonstrates how to get Sails implemented a on 
+This simple, default [Sails](http://sailsjs.org/) app demonstrates how to get Sails implemented on 
 Cloud Foundry-based PaaS.
 
 Setup
@@ -79,9 +79,12 @@ urls: sailsdemo.cfapps.io
 ````
 
 Using [AppFog](http://appfog.com) and their `af` 
-command line tool. 
+command line tool. Note that you need to __shrinkwrap 
+the application__ prior to deployment.
 
 ````
+$ npm install
+$ npm shrinkwrap
 $ af push sailsjs-demo
 Would you like to deploy from the current directory? [Yn]: 
 Detected a Node.js Application, is this correct? [Yn]: 
